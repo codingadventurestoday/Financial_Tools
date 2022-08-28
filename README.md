@@ -9,14 +9,6 @@ This project helps individuals with a variety of basic tools to improve their fi
 
 Python3.10 
 
-<---## GET STARTED
--->
-
-<---### PREREQUISITES 
--->
-
-<---### INSTALLION 
--->
 
 
 ## Road Map
