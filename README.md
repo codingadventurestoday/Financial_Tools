@@ -9,13 +9,20 @@ This project helps individuals with a variety of basic tools to improve their fi
 
 Python3.10 
 
-## GET STARTED 
+<---## GET STARTED 
 
 ### PREREQUISITES 
 
 
-### INSTALLION 
+### INSTALLION -->
 
+
+## Road Map
+- Add the estimated tax tool <br>
+- Add the spending plan tool <br>
+- Add the paying off previous purchase tool <br>
+- Add the saving for a purchase tool <br>
+- Create a front-end experience 
 
 ## USAGE 
 
