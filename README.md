@@ -18,7 +18,6 @@ Python3.10
 - Add the saving for a purchase tool <br>
 - Create a front-end experience 
 
-## USAGE 
 
 ## CONTRIBUTAION 
 This is a project to foster the growth of my engineering skills. As a result, any contribution is limited to suggestions only.  <br>
