@@ -3,6 +3,11 @@
 ## ABOUT THIS PROJECT 
 
 This project helps individuals with a variety of basic tools to improve their financial decisions.  <br>
+These tools include:  <br>
+- Saving for a future purchase  <br>
+- Paying off a previous purchase  <br>
+- Creating a spending plan  <br>
+- Estimate your yearly taxes  <br>
 
 
 ## BUILT WITH 
@@ -15,7 +20,6 @@ Python3.10
 - Add the estimated tax tool <br>
 - Add the spending plan tool <br>
 - Add the paying off previous purchase tool <br>
-- Add the saving for a purchase tool <br>
 - Create a front-end experience 
 
 
