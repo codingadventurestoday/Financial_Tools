@@ -113,15 +113,18 @@ while current_status == True:
             return_to_homepage()
                      
         elif tool_selection == 2: 
-            previous_purchase_payoff()  
+            previous_purchase_payoff() 
+            print('Currently under reconstruction. Please try again September 7th\n')
             return_to_homepage()
                            
         elif tool_selection == 3: 
             spending_plan()     
+            print('Currently under reconstruction. Please try again September 7th\n')
             return_to_homepage()
               
         elif tool_selection == 4:                   
-            estimated_taxes()  
+            estimated_taxes()
+            print('Currently under reconstruction. Please try again September 7th\n')               
             return_to_homepage()
                            
         elif tool_selection == 5: 
