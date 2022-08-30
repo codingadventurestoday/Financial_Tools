@@ -38,27 +38,42 @@ def future_purchase():
                     print('Please enter the amount you will be saving each month is numerical form. Example: 300.\n')
             amount_of_months_to_save = amount_to_purchase/monthly_savings
             output_name = f'You will be able to make a purchase of ${amount_to_purchase} in {amount_of_months_to_save} by saving ${monthly_savings} each month.'
-            return output_name
             check_decide_path = False 
             break
             
         elif re.search('timeline', decide_path.lower()) != None:
             #enter timeline saving pathway
-            check_decide_path
+            print('Let\'s work on finding how much money you need to save a month,')
+            check_months_to_save = True
+            while check_months_to_save == True:
+                months_to_save = input('')
+                try: 
+                    months_to_save = int(months_to_save)
+                except: 
+                    print('Please enter the amount of months you would like to make the purchase in numerical form. Example: 15\n')
+                amount_to_save_monthly = amount_to_purchase/months_to_save
+                output_name = f'You will be able to make a purchase of ${amount_to_purchase} by saving ${months_to_save} in {months_to_save}months.'
+                check_months_to_save = False
+                break 
+                
+            check_decide_path = False
             break
             
         else:
             print('Please ensure that you enter either fixed or timeline.\n\n')
             continue
-    return None  
+    return output_name  
   
 def previous_purchase_payoff():
+    
     return None 
 
 def spending_plan():
+    
     return None
 
 def estimated_taxes():
+    
     return None 
   
 def return_to_homepage(): 
