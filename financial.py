@@ -6,37 +6,43 @@
 """
 import re
 
-federal_tax_bracket = {'single': , {'tier 1': sum*.1,
-                                    'tier 2': 1027.5+(sum-10275)*.12,
-                                    'tier 3': 4807.5+(sum-41775)*.22,
-                                    'tier 4': 15213.5+(sum-89075)*.24,
-                                    'tier 5': 34647.5+(sum-170050)*.32,
-                                    'tier 6': 49335.5+(sum-215950)*.35,
-                                    'tier 7': 113382.5+(sum-539900)*.37
+federal_deducibles = {'single': 12950,
+                      'jointly': 25900,
+                      'seperate': 12950,
+                      'head of household': 19400}
+
+
+federal_tax_bracket = {'single': , {'tier 1': adjusted_federal_income*.1,
+                                    'tier 2': 1027.5+(adjusted_federal_income-10275)*.12,
+                                    'tier 3': 4807.5+(adjusted_federal_income-41775)*.22,
+                                    'tier 4': 15213.5+(adjusted_federal_income-89075)*.24,
+                                    'tier 5': 34647.5+(adjusted_federal_income-170050)*.32,
+                                    'tier 6': 49335.5+(adjusted_federal_income-215950)*.35,
+                                    'tier 7': 113382.5+(adjusted_federal_income-539900)*.37
                                    }
-                       'jointly': {'tier 1': sum*.10,
-                                  'tier 2': +(sum-20550)*.12,
-                                  'tier 3': +(sum-83550)*.22,
-                                  'tier 4': +(sum-178150)*.34,
-                                  'tier 5': +(sum-340100)*.32,
-                                  'tier 6': +(sum-431900)*.35,
-                                  'tier 7': +(sum-647850)*.37
+                       'jointly': {'tier 1': adjusted_federal_income*.10,
+                                  'tier 2': +(adjusted_federal_income-20550)*.12,
+                                  'tier 3': +(adjusted_federal_income-83550)*.22,
+                                  'tier 4': +(adjusted_federal_income-178150)*.34,
+                                  'tier 5': +(adjusted_federal_income-340100)*.32,
+                                  'tier 6': +(adjusted_federal_income-431900)*.35,
+                                  'tier 7': +(adjusted_federal_income-647850)*.37
                                  },
-                       'seperate': {'tier 1': sum*.10,
-                                    'tier 2': 1027.5+(sum-10275)*.12,
-                                    'tier 3': 4807.5+(sum-41775)*.22,
-                                    'tier 4': 15213.5+(sum-89075)*.24,
-                                    'tier 5': 34647.5+(sum-170050)*.32,
-                                    'tier 6': +(sum-215950)*.35,
-                                    'tier 7': +(sum-323925)*.37
+                       'seperate': {'tier 1': adjusted_federal_income*.10,
+                                    'tier 2': 1027.5+(adjusted_federal_income-10275)*.12,
+                                    'tier 3': 4807.5+(adjusted_federal_income-41775)*.22,
+                                    'tier 4': 15213.5+(adjusted_federal_income-89075)*.24,
+                                    'tier 5': 34647.5+(adjusted_federal_income-170050)*.32,
+                                    'tier 6': +(adjusted_federal_income-215950)*.35,
+                                    'tier 7': +(adjusted_federal_income-323925)*.37
                                    },
-                       'head of house':{'tier 1': sum*.10,
-                                        'tier 2': +(sum-14650)*.12,
-                                        'tier 3': +(sum-55900)*.22,
-                                        'tier 4': +(sum-89050)*.24,
-                                        'tier 5': +(sum-170050)*.32,
-                                        'tier 6': +(sum-215950)*.35,
-                                        'tier 17': +(sum-53900)*.37
+                       'head of house':{'tier 1': adjusted_federal_income*.10,
+                                        'tier 2': +(adjusted_federal_income-14650)*.12,
+                                        'tier 3': +(adjusted_federal_income-55900)*.22,
+                                        'tier 4': +(adjusted_federal_income-89050)*.24,
+                                        'tier 5': +(adjusted_federal_income-170050)*.32,
+                                        'tier 6': +(adjusted_federal_income-215950)*.35,
+                                        'tier 17': +(adjusted_federal_income-53900)*.37
                                         }
                       }
 
@@ -52,8 +58,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                   'head of house':{'tier 1': +(sum-)*.12,
                                                    'tier 2': +(sum-)*.12,
                                                    'tier 3': +(sum-)*.12}
-                                  },
-                     'alaska': 0,
+                                  }
                      'arizona':{'single': , {'tier 1': sum*.1,
                                              'tier 2': +(sum-)*.12,
                                              'tier 3': +(sum-)*.12,
@@ -179,8 +184,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                                   'tier 5': +(sum-)*.12,
                                                   'tier 6': +(sum-)*.12,
                                                   'tier 7': +(sum-)*.12}
-                                 }, 
-                     'florida': 0,
+                                 }
                      'georgia': {'single': , {'tier 1': sum*.1,
                                               'tier 2': +(sum-)*.12,
                                               'tier 3': +(sum-)*.12,
@@ -510,8 +514,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                                   'tier 2': +(sum-)*.12,
                                                   'tier 3': +(sum-)*.12,
                                                   'tier 4': +(sum-)*.12}
-                             }, 
-                     'nevada': 0, 
+                             }
                      'new hampshire': sum*.05, 
                      'new jersey': {'single': , {'tier 1': sum*.1,
                                                  'tier 2': +(sum-)*.12,
@@ -719,8 +722,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                                        'tier 4': +(sum-)*.12,
                                                        'tier 5': +(sum-)*.12,
                                                        'tier 6': +(sum-)*.12}
-                      }, 
-                     'south dakota': 0, 
+                      } 
                      'tennessee': {'single': , {'tier 1': sum*.1,
                                                 'tier 2': +(sum-)*.12,
                                                 'tier 3': +(sum-)*.12,
@@ -749,8 +751,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                                    'tier 5': +(sum-)*.12,
                                                    'tier 6': +(sum-)*.12,
                                                    'tier 17': +(sum-)*.12}
-                                   }, 
-                     'texas': 0, 
+                                   }
                      'utah': sum*.0495, 
                      'vermont': {'single': , {'tier 1': sum*.1,
                                               'tier 2': +(sum-)*.12,
@@ -785,8 +786,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                                     'tier 2': +(sum-)*.12,
                                                     'tier 3': +(sum-)*.12,
                                                     'tier 4': +(sum-)*.12}
-                                }, 
-                     'washington': 0, 
+                                }
                      'west virginia': {'single': , {'tier 1': sum*.1,
                                                     'tier 2': +(sum-)*.12,
                                                     'tier 3': +(sum-)*.12,
@@ -823,16 +823,15 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': sum*..02,
                                     'head of house':{'tier 1': +(sum-)*.12,
                                                      'tier 2': +(sum-)*.12,
                                                      'tier 3': +(sum-)*.12,
-                                                     'tier 4': +(sum-)*.12}
-                           }, 
-                     'wyoming': 0
-                    }
+                                                     'tier 4': +(sum-)*.12}   }     }
 
-list_of_states = ['alabama' , 'alaska' , 'arizona' ,'arkansas' ,'california','colorado' , 'connecticut' ,'delaware', 'florida' , 'georgia' , 'hawaii' , 'idaho' , 'illinois' ,
+list_of_states_with_taxes = ['alabama' , 'arizona' ,'arkansas' ,'california','colorado' , 'connecticut' ,'delaware' , 'georgia' , 'hawaii' , 'idaho' , 'illinois' ,
                   'indiana' , 'iowa' ,'kansas' , 'kentucky' ,'louisiana' , 'maine' , 'maryland', 'massachusetts' , 'michigan' ,'minnesota' , 'mississippi' ,'missouri' , 'montana' , 
-                  'nebraska' ,'nevada' , 'new hampshire' ,'new jersey' ,'new mexico' ,'new york' ,'north carolina', 'north dakota' ,'ohio' , 'oklahoma' ,'oregon' , 'pennsylvania' , 
-                  'rhode island' , 'south carolina' , 'south dakota' ,'tennessee' , 'texas' , 'utah', 'vermont' , 'virginia' ,'washington' , 'west virginia' ,'wisconsin' , 'wyoming']
-                     
+                  'nebraska' , 'new hampshire' ,'new jersey' ,'new mexico' ,'new york' ,'north carolina', 'north dakota' ,'ohio' , 'oklahoma' ,'oregon' , 'pennsylvania' , 
+                  'rhode island' , 'south carolina' ,'tennessee' , 'utah', 'vermont' , 'virginia' , 'west virginia' ,'wisconsin']
+list_of_states_with_no_taxes = ['alaska', 'florida', 'south dakota','nevada', 'texas','washington', 'wyoming']
+
+list_of_filling_status = ['single', 'jointly', 'seperate', 'head of household']                     
 
 def future_purchase(): 
     print('let\'s work on a game plan to save up for a future purchase!')
@@ -901,8 +900,191 @@ def spending_plan():
     return None
 
 def estimated_taxes():
+    print('''Please note that these estimated taxes are not considering itemizing deductable. This amount assumes a standard deductable. 
+    As a result, there is a possibility that you will owe less taxes. You can consider this your tax ceiling.\n'''
+    check_state = True
+    while check_state == True: 
+          state = input('We need to know the state that you live in. Please enter the whole name. Example: Mississippi.')
+          if state.lower() in list_of_states_with_taxes or list_of_states_with_no_taxes: 
+              check_state = False 
+              break 
+          elif: 
+              print('You have entered something that is not a state. Please ensure that your spelling is correct.\n')
+    check_gross_income = True 
+    while check_gross_income == True: 
+          gross_income_input = input('Now you will have to enter the amount of money you will make in this calendar year: $')
+          try: 
+              gross_income = int(gross_income_input)
+              check_gross_income_input = False
+              break 
+          except: 
+              print('Please enter the amount you will make in numerical form.')
+    check_self_employment = True
+    while check_self_employment == True: 
+          self_employment_input = input('Please enter how much of that income was made by you being self employed. If none, please enter 0. $')
+          try: 
+              self_employment_income = int(self_employment_input)
+              check_self_eployment = False
+              break
+          except: 
+              print('please enter any amount that you made as self employed in numerical form.\n')
+          
+    self_employment_tax = self_employment_income*.153
+          
+    check_filing_status = True
+    while check_filing_status == True: 
+          filing_status = input('''Please enter the status you will be filing. Single, Jointly, Seperate, or Head of household''')
+          if filing_status in list_of_filing_status:
+              check_filing_status = False
+              break 
+          else: 
+              print('Please enter one of the four options.')
+          
+    adjusted_federal_income = gross_income-self_employment_income-federal_deductibles[filing_status]
+          
+    if filing_status == 'single':    
+        if adjusted_federal_income =< 10275: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 1']
+          
+        elif 10276 <= adjusted_federal_income <41776: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 2']          
+          
+        elif 41776 <= adjusted_federal_income <89076:
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 3']
+          
+        elif 89076 <= adjusted_federal_income <170051: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 4']          
+          
+        elif 170051 <= adjusted_federal_income <215951: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 5']          
+          
+        elif 215951 <= adjusted_federal_income <539901: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 6']          
+          
+        elif 539901 <= adjusted_federal_income: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 7'] 
+          
+    elif filing_status == 'jointly':    
+        if adjusted_federal_income =< 20550: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 1']
+          
+        elif 20551<= adjusted_federal_income <83551: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 2']  
+          
+        elif 83551<= adjusted_federal_income <178151: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 3']
+          
+        elif 178151<= adjusted_federal_income <340101: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 4']    
+          
+        elif 340101 <= adjusted_federal_income <431901 : 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 5']  
+          
+        elif 431901<= adjusted_federal_income <647851: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 6']  
+          
+        elif 647851<= adjusted_federal_income: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 7'] 
+          
+    elif filing_status == 'seperate':    
+        if adjusted_federal_income =<10275: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 1']
+          
+        elif 10276<= adjusted_federal_income <41776: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 2']  
+          
+        elif 41776<= adjusted_federal_income <89076: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 3']
+          
+        elif 89076<= adjusted_federal_income <170051: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 4']      
+          
+        elif 170051<= adjusted_federal_income <215951: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 5']   
+          
+        elif 215951<= adjusted_federal_income <323926: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 6']  
+          
+        elif 323,926<= adjusted_federal_income  : 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 7']   
+          
+    elif filing_status == 'head of household':    
+        if adjusted_federal_income =< 14650: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 1']
+          
+        elif 14651<= adjusted_federal_income <55901: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 2']  
+          
+        elif 55901<= adjusted_federal_income <89051: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 3']
+          
+        elif 89051<= adjusted_federal_income <170051: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 4'] 
+          
+        elif 170051< adjusted_federal_income <215951: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 5'] 
+          
+        elif 215921< adjusted_federal_income <539901: 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 6']  
+          
+        elif 539901<= adjusted_federal_income  : 
+              federal_tax_amount = federal_tax_bracket[filing_status]['tier 7']           
     
-    return None 
+     if state.lower() in list_of_states_with_no_taxes: 
+          state_tax_amount = 0
+     elif state.lower() == 'alabama': 
+          
+     elif state.lower() == 'arizona':
+     elif state.lower() = 'arkansas':
+     elif state.lower() = 'california':
+     elif state.lower() = 'colorado':
+     elif state.lower() = 'connecticut':
+     elif state.lower() = 'delware':
+     elif state.lower() = 'georgia':
+     elif state.lower() = 'hawaii':
+     elif state.lower() = 'idaho':
+     elif state.lower() = 'illinois':
+          
+     elif state.lower() = 'indiana':
+     elif state.lower() = 'iowa':
+     elif state.lower() = 'kansas':
+     elif state.lower() = 'kentucky':
+     elif state.lower() = 'louisiana':
+     elif state.lower() = 'maine':
+     elif state.lower() = 'maryland':
+     elif state.lower() = 'massachuetts':
+     elif state.lower() = 'michigan':                             
+     elif state.lower() = 'minnesota':
+          
+     elif state.lower() = 'mississippi':
+     elif state.lower() = 'missouri':
+     elif state.lower() = 'montana':
+     elif state.lower() = 'nebraska':
+     elif state.lower() = 'new hampshire':
+     elif state.lower() = 'new jersey':
+     elif state.lower() = 'new mexico':
+     elif state.lower() = 'new york':
+     elif state.lower() = 'north carolina': 
+     elif state.lower() = 'north dakota':
+          
+     elif state.lower() = 'ohio':
+     elif state.lower() = 'oklahoma':
+     elif state.lower() = 'oregon':
+     elif state.lower() = 'pennslyvania':
+     elif state.lower() = 'rhode island':
+     elif state.lower() = 'south carolina': 
+     elif state.lower() = 'tennessee':
+     elif state.lower() = 'utah':
+     elif state.lower() = 'vermont':         
+     elif state.lower() = 'virgina':
+     elif state.lower() = 'west virgina':
+     elif state.lower() = 'wisconsin':          
+          
+    if self_employment_income > 0:
+          tax_statement = f"Your total amount of taxes due is ${}. This include ${federal_tax_amount} federal tax, ${self_employment_tax} in self employment, and ${state_tax_amount} {state} tax amount."
+    elif self_employment_income == 0:      
+        tax_statement = f"Your total amount of taxes due is ${}. This include ${federal_tax_amount} federal tax and ${state_tax_amount} {state} tax amount."
+    return tax_statement 
   
 def return_to_homepage(): 
     user_decision = input('''You have successfully completed the use of one of our finance tools. Would you like to return to our homepage to use another tool? 
