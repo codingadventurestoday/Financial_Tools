@@ -279,7 +279,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                      'illinois': sum*.0495,
                      'indiana': sum*.0323,
                      'iowa': {'single': , {'tier 1': adjusted_state_income*.0033,
-                                           'tier 2': 5.75+(adjusted_state_income-1743)*.067,
+                                           'tier 2': 5.75+(adjusted_state_income-1743)*.0067,
                                            'tier 3': 17.43+(adjusted_state_income-3486)*.0225,
                                            'tier 4': 95.87+(adjusted_state_income-6972)*.0414,
                                            'tier 5': 456.67+(adjusted_state_income-15687)*.0563,
@@ -287,106 +287,106 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                            'tier 7': 1564.87+(adjusted_state_income-34860)*.0625,
                                            'tier 8': 2654.25+(adjusted_state_income-52290)*.0744,
                                            'tier 9': 4599.44+(adjusted_state_income-78435)*.0853},
-                               'jointly': {'tier 1': +(adjusted_state_income-)*.12,
-                                           'tier 2': +(adjusted_state_income-)*.12,
-                                           'tier 3': +(adjusted_state_income-)*.12,
-                                           'tier 4': +(adjusted_state_income-)*.12,
-                                           'tier 5': +(adjusted_state_income-)*.12,
-                                           'tier 6': +(adjusted_state_income-)*.12,
-                                           'tier 7': +(adjusted_state_income-)*.12,
-                                           'tier 8': +(adjusted_state_income-)*.12,
-                                           'tier 9': +(adjusted_state_income-)*.12},
-                                'seperate': {'tier 1': +(adjusted_state_income-)*.12,
-                                             'tier 2': +(adjusted_state_income-)*.12,
-                                             'tier 3': +(adjusted_state_income-)*.12,
-                                             'tier 4': +(adjusted_state_income-)*.12,
-                                             'tier 5': +(adjusted_state_income-)*.12,
-                                             'tier 6': +(adjusted_state_income-)*.12,
-                                             'tier 7': +(adjusted_state_income-)*.12,
-                                             'tier 8': +(adjusted_state_income-)*.12,
-                                             'tier 9': +(adjusted_state_income-)*.12},
-                               'head of house':{'tier 1': +(adjusted_state_income-)*.12,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12,
-                                                'tier 4': +(adjusted_state_income-)*.12,
-                                                'tier 5': +(adjusted_state_income-)*.12,
-                                                'tier 6': +(adjusted_state_income-)*.12,
-                                                'tier 7': +(adjusted_state_income-)*.12,
-                                                'tier 8': +(adjusted_state_income-)*.12,
-                                                'tier 9': +(adjusted_state_income-)*.12}
+                               'jointly': {'tier 1': +(adjusted_state_income-)*.0033,
+                                           'tier 2': +(adjusted_state_income-)*.0067,
+                                           'tier 3': +(adjusted_state_income-)*.0225,
+                                           'tier 4': +(adjusted_state_income-)*.0414,
+                                           'tier 5': +(adjusted_state_income-)*.0563,
+                                           'tier 6': +(adjusted_state_income-)*.0596,
+                                           'tier 7': +(adjusted_state_income-)*.0625,
+                                           'tier 8': +(adjusted_state_income-)*.0744,
+                                           'tier 9': +(adjusted_state_income-)*.0853},
+                                'seperate': {'tier 1': +(adjusted_state_income-)*.0033,
+                                             'tier 2': +(adjusted_state_income-)*.0067,
+                                             'tier 3': +(adjusted_state_income-)*.0225,
+                                             'tier 4': +(adjusted_state_income-)*.0414,
+                                             'tier 5': +(adjusted_state_income-)*.0563,
+                                             'tier 6': +(adjusted_state_income-)*.0596,
+                                             'tier 7': +(adjusted_state_income-)*.0625,
+                                             'tier 8': +(adjusted_state_income-)*.0744,
+                                             'tier 9': +(adjusted_state_income-)*.0853},
+                               'head of house':{'tier 1': +(adjusted_state_income-)*.0033,
+                                                'tier 2': +(adjusted_state_income-)*.0067,
+                                                'tier 3': +(adjusted_state_income-)*.0225,
+                                                'tier 4': +(adjusted_state_income-)*.0414,
+                                                'tier 5': +(adjusted_state_income-)*.0563,
+                                                'tier 6': +(adjusted_state_income-)*.0596,
+                                                'tier 7': +(adjusted_state_income-)*.0625,
+                                                'tier 8': +(adjusted_state_income-)*.0744,
+                                                'tier 9': +(adjusted_state_income-)*.0853}
                              }, 
-                     'kansas': {'single': , {'tier 1': adjusted_state_income*.1,
-                                             'tier 2': +(adjusted_state_income-)*.12,
-                                             'tier 3': +(adjusted_state_income-)*.12},
-                                'jointly': {'tier 1': +(adjusted_state_income-)*.12,
-                                            'tier 2': +(adjusted_state_income-)*.12,
-                                            'tier 3': +(adjusted_state_income-)*.12},
-                                'seperate': {'tier 1': +(adjusted_state_income-)*.12,
-                                             'tier 2': +(adjusted_state_income-)*.12,
-                                             'tier 3': +(adjusted_state_income-)*.12},
-                                'head of house':{'tier 1': +(adjusted_state_income-)*.12,
-                                                 'tier 2': +(adjusted_state_income-)*.12,
-                                                 'tier 3': +(adjusted_state_income-)*.12}
+                     'kansas': {'single': , {'tier 1': adjusted_state_income*.031,
+                                             'tier 2': 465+(adjusted_state_income-15000)*.0525,
+                                             'tier 3': 1252.5+(adjusted_state_income-30000)*.057},
+                                'jointly': {'tier 1': adjusted_state_income*.031,
+                                            'tier 2': 930+(adjusted_state_income-30000)*.0525,
+                                            'tier 3': 2505+(adjusted_state_income-60000)*.057},
+                                'seperate': {'tier 1': adjusted_state_income*.031,
+                                             'tier 2': 465+(adjusted_state_income-15000)*.0525,
+                                             'tier 3': 1252.5+(adjusted_state_income-30000)*.057},
+                                'head of house':{'tier 1': adjusted_state_income*.031,
+                                                 'tier 2': 930+(adjusted_state_income-15000)*.0525,
+                                                 'tier 3': 2505+(adjusted_state_income-60000)*.057}
                              }, 
                      'kentucky': .05, 
-                     'louisiana': {'single': , {'tier 1': adjusted_state_income*.1,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12},
-                                   'jointly': {'tier 1': +(adjusted_state_income-)*.12,
-                                               'tier 2': +(adjusted_state_income-)*.12,
-                                               'tier 3': +(adjusted_state_income-)*.12},
-                                   'seperate': {'tier 1': +(adjusted_state_income-)*.12,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12},
-                                   'head of house':{'tier 1': +(adjusted_state_income-)*.12,
-                                                    'tier 2': +(adjusted_state_income-)*.12,
-                                                    'tier 3': +(adjusted_state_income-)*.12}
+                     'louisiana': {'single': , {'tier 1': adjusted_state_income*.0185,
+                                                'tier 2': 231.25+(adjusted_state_income-12500)*.0350,
+                                                'tier 3': 1543.75+(adjusted_state_income-50000)*.0425},
+                                   'jointly': {'tier 1': adjusted_state_income*.0185,
+                                               'tier 2': 462.5+(adjusted_state_income-25000)*.0350,
+                                               'tier 3': 3087.50+(adjusted_state_income-100000)*.0425},
+                                   'seperate': {'tier 1': adjusted_state_income*.0185,
+                                                'tier 2': 231.25+(adjusted_state_income-12500)*.0350,
+                                                'tier 3': 1543.75+(adjusted_state_income-50000)*.0425},
+                                   'head of house':{'tier 1': adjusted_state_income*.0185,
+                                                    'tier 2': 231.25+(adjusted_state_income-12500)*.0350,
+                                                    'tier 3': 1543.75+(adjusted_state_income-50000)*.0425}
                                    }, 
-                     'maine': {'single': , {'tier 1': adjusted_state_income*.1,
-                                            'tier 2': +(adjusted_state_income-)*.12,
-                                            'tier 3': +(adjusted_state_income-)*.12},
-                               'jointly': {'tier 1': +(adjusted_state_income-)*.12,
-                                           'tier 2': +(adjusted_state_income-)*.12,
-                                           'tier 3': +(adjusted_state_income-)*.12},
-                               'seperate': {'tier 1': +(adjusted_state_income-)*.12,
-                                            'tier 2': +(adjusted_state_income-)*.12,
-                                            'tier 3': +(adjusted_state_income-)*.12},
-                               'head of house':{'tier 1': +(adjusted_state_income-)*.12,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12}
+                     'maine': {'single': , {'tier 1': adjusted_state_income*.058,
+                                            'tier 2': 133.4+(adjusted_state_income-23000)*.0675,
+                                            'tier 3': 2382.08+(adjusted_state_income-54450)*.0715},
+                               'jointly': {'tier 1': adjusted_state_income*.058,
+                                           'tier 2': 2668+(adjusted_state_income-46000)*.0675,
+                                           'tier 3': 6914+(adjusted_state_income-108900)*.0715},
+                               'seperate': {'tier 1': adjusted_state_income*.058,
+                                            'tier 2': 133.4+(adjusted_state_income-23000)*.0675,
+                                            'tier 3': 2382.08+(adjusted_state_income-54450)*.0715},
+                               'head of house':{'tier 1': adjusted_state_income*.058,
+                                                'tier 2': 2001+(adjusted_state_income-34500)*.0675,
+                                                'tier 3': 5187+(adjusted_state_income-81700)*.0715}
                               }, 
-                     'maryland': {'single': , {'tier 1': adjusted_state_income*.1,
-                                               'tier 2': +(adjusted_state_income-)*.12,
-                                               'tier 3': +(adjusted_state_income-)*.12,
-                                               'tier 4': +(adjusted_state_income-)*.12,
-                                               'tier 5': +(adjusted_state_income-)*.12,
-                                               'tier 6': +(adjusted_state_income-)*.12,
-                                               'tier 7': +(adjusted_state_income-)*.12,
-                                               'tier 8': +(adjusted_state_income-)*.12},
-                                  'jointly': {'tier 1': +(adjusted_state_income-)*.12,
-                                              'tier 2': +(adjusted_state_income-)*.12,
-                                              'tier 3': +(adjusted_state_income-)*.12,
-                                              'tier 4': +(adjusted_state_income-)*.12,
-                                              'tier 5': +(adjusted_state_income-)*.12,
-                                              'tier 6': +(adjusted_state_income-)*.12,
-                                              'tier 7': +(adjusted_state_income-)*.12,
-                                              'tier 8': +(adjusted_state_income-)*.12},
-                                  'seperate': {'tier 1': +(adjusted_state_income-)*.12,
-                                               'tier 2': +(adjusted_state_income-)*.12,
-                                               'tier 3': +(adjusted_state_income-)*.12,
-                                               'tier 4': +(adjusted_state_income-)*.12,
-                                               'tier 5': +(adjusted_state_income-)*.12,
-                                               'tier 6': +(adjusted_state_income-)*.12,
-                                               'tier 7': +(adjusted_state_income-)*.12,
-                                               'tier 8': +(adjusted_state_income-)*.12},
-                                  'head of house':{'tier 1': +(adjusted_state_income-)*.12,
-                                                   'tier 2': +(adjusted_state_income-)*.12,
-                                                   'tier 3': +(adjusted_state_income-)*.12,
-                                                   'tier 4': +(adjusted_state_income-)*.12,
-                                                   'tier 5': +(adjusted_state_income-)*.12,
-                                                   'tier 6': +(adjusted_state_income-)*.12,
-                                                   'tier 7': +(adjusted_state_income-)*.12,
-                                                   'tier 8': +(adjusted_state_income-)*.12}
+                     'maryland': {'single': , {'tier 1': adjusted_state_income*.02,
+                                               'tier 2': 20+(adjusted_state_income-1000)*.03,
+                                               'tier 3': 50+(adjusted_state_income-2000)*.04,
+                                               'tier 4': 90+(adjusted_state_income-3000)*.0475,
+                                               'tier 5': 4697.5+(adjusted_state_income-100000)*.05,
+                                               'tier 6': 5947.5+(adjusted_state_income-125000)*.0525,
+                                               'tier 7': 7260+(adjusted_state_income-150000)*.055,
+                                               'tier 8': 12760+(adjusted_state_income-250000)*.0575},
+                                  'jointly': {'tier 1': adjusted_state_income*.02,
+                                              'tier 2': 20+(adjusted_state_income-1000)*.03,
+                                              'tier 3': 50+(adjusted_state_income-2000)*.04,
+                                              'tier 4': 90+(adjusted_state_income-3000)*.0475,
+                                              'tier 5': 7072.5+(adjusted_state_income-150000)*.05,
+                                              'tier 6': 8332.5+(adjusted_state_income-175000)*.0525,
+                                              'tier 7': 10947.5+(adjusted_state_income-225000)*.055,
+                                              'tier 8': 15072.5+(adjusted_state_income-300000)*.0575},
+                                  'seperate': {'tier 1': adjusted_state_income*.02,
+                                               'tier 2': 20+(adjusted_state_income-1000)*.03,
+                                               'tier 3': 50+(adjusted_state_income-2000)*.04,
+                                               'tier 4': 90+(adjusted_state_income-3000)*.0475,
+                                               'tier 5': 4697.5+(adjusted_state_income-100000)*.05,
+                                               'tier 6': 5947.5+(adjusted_state_income-125000)*.0525,
+                                               'tier 7': 7260+(adjusted_state_income-150000)*.055,
+                                               'tier 8': 12760+(adjusted_state_income-250000)*.0575},
+                                  'head of house':{'tier 1': adjusted_state_income*.02,
+                                                   'tier 2': 20+(adjusted_state_income-1000)*.03,
+                                                   'tier 3': 50+(adjusted_state_income-2000)*.04,
+                                                   'tier 4': 90+(adjusted_state_income-3000)*.0475,
+                                                   'tier 5': 7072.50+(adjusted_state_income-150000)*.05,
+                                                   'tier 6': 8332.5+(adjusted_state_income-175000)*.0525,
+                                                   'tier 7': 10947.5+(adjusted_state_income-225000)*.055,
+                                                   'tier 8': 15072.5+(adjusted_state_income-300000)*.0575}
                                       }, 
                      'massachusetts': adjusted_state_income*.05, 
                      'michigan': adjusted_state_income*.0425, 
@@ -1027,54 +1027,360 @@ def estimated_taxes():
               adjusted_state_income = gross_income - 7500
           
      elif state.lower() == 'arizona':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'arkansas':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'california':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'colorado':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'connecticut':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'delware':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'georgia':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'hawaii':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'idaho':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'illinois':
-          
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'indiana':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'iowa':
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 2210
-          elif filing_status == 'jointly': 
+          elif filing_status == 'jointly' or 'head of household': 
               adjusted_state_income = gross_income - 5450
      elif state.lower() = 'kansas':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 12950
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 25900
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income - 19400
      elif state.lower() = 'kentucky':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 2690
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 2690
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income - 2690 
+          
      elif state.lower() = 'louisiana':
+          if filing_status == 'single' or 'seperate' or 'head of household':
+              adjusted_state_income = gross_income - 4500
+              if adjusted_state_income <= 12500: 
+                  state_tax_bracket[state][filling_status]['tier 1']
+              elif 1250 < adjusted_state_income < 50000: 
+                  state_tax_bracket[state][filling_status]['tier 2']          
+              elif adjusted_state_income > 50000: 
+                  state_tax_bracket[state][filling_status]['tier 3']          
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 9000
+              if adjusted_state_income <= 25000: 
+                  state_tax_bracket[state][filling_status]['tier 1']          
+              elif 25000 < adjusted_state_income <100000: 
+                  state_tax_bracket[state][filling_status]['tier 2']          
+              elif adjusted_state_income > 10000: 
+                  state_tax_bracket[state][filling_status]['tier 3']
+          
      elif state.lower() = 'maine':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 12950 
+                  if adjusted_state_income <= 23000:
+                      state_tax_bracket[state][filling_status]['tier 1']
+                  elif 23000 < adjusted_state_income <= 54450: 
+                      state_tax_bracket[state][filling_status]['tier 2']
+                  elif adjusted_state_income > 54450: 
+                      state_tax_bracket[state][filling_status]['tier 3']
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 25900
+                  if adjusted_state_income <= 46000: 
+                      state_tax_bracket[state][filling_status]['tier 1']
+                  elif 46000 < adjusted_state_income <= 108900: 
+                      state_tax_bracket[state][filling_status]['tier 2']
+                  elif adjusted_state_income >108900 : 
+                      state_tax_bracket[state][filling_status]['tier 3'] 
+          
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income - 19400 
+                  if adjusted_state_income <= 34500:
+                      state_tax_bracket[state][filling_status]['tier 1']
+                  elif 34500 < adjusted_state_income <= 81700 : 
+                      state_tax_bracket[state][filling_status]['tier 2']
+                  elif adjusted_state_income > 81700: 
+                      state_tax_bracket[state][filling_status]['tier 3']
+          
      elif state.lower() = 'maryland':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 2350
+              if adjusted_state_income <= 1000: 
+                  state_tax_bracket[state][filling_status]['tier 1']
+              elif 1000< adjusted_state_income <= 2000: 
+                  state_tax_bracket[state][filling_status]['tier 2']
+              elif 2000< adjusted_state_income <= 3000: 
+                  state_tax_bracket[state][filling_status]['tier 3']
+              elif 3000< adjusted_state_income <= 100000: 
+                  state_tax_bracket[state][filling_status]['tier 4']
+              elif 100000< adjusted_state_income <= 125000: 
+                  state_tax_bracket[state][filling_status]['tier 5']
+              elif 125000< adjusted_state_income <= 150000: 
+                  state_tax_bracket[state][filling_status]['tier 6']
+              elif 150000< adjusted_state_income <= 250000 : 
+                  state_tax_bracket[state][filling_status]['tier 7']
+              elif adjusted_state_income < 250000 : 
+                  state_tax_bracket[state][filling_status]['tier 8']            
+          elif filing_status == 'jointly' or 'head of household': 
+              adjusted_state_income = gross_income -4700 
+              if adjusted_state_income <= 1000: 
+                  state_tax_bracket[state][filling_status]['tier 1']
+              elif 1000< adjusted_state_income <= 2000: 
+                  state_tax_bracket[state][filling_status]['tier 2']
+              elif 2000< adjusted_state_income <= 3000: 
+                  state_tax_bracket[state][filling_status]['tier 3']
+              elif 3000< adjusted_state_income <=150000 : 
+                  state_tax_bracket[state][filling_status]['tier 4']
+              elif 150000< adjusted_state_income <=175000 : 
+                  state_tax_bracket[state][filling_status]['tier 5']
+              elif 175000< adjusted_state_income <= 225000: 
+                  state_tax_bracket[state][filling_status]['tier 6']
+              elif 225000< adjusted_state_income <= 300000: 
+                  state_tax_bracket[state][filling_status]['tier 7']        
+              elif adjusted_state_income < 300000 : 
+                  state_tax_bracket[state][filling_status]['tier 8']          
+          
      elif state.lower() = 'massachuetts':
-     elif state.lower() = 'michigan':                             
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
+     elif state.lower() = 'michigan':               
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'minnesota':
-          
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'mississippi':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'missouri':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'montana':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'nebraska':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'new hampshire':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'new jersey':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'new mexico':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'new york':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'north carolina': 
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'north dakota':
-          
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'ohio':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'oklahoma':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'oregon':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'pennslyvania':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'rhode island':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'south carolina': 
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'tennessee':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'utah':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'vermont':         
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'virgina':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
      elif state.lower() = 'west virgina':
-     elif state.lower() = 'wisconsin':          
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -          
+     elif state.lower() = 'wisconsin':
+          if filing_status == 'single' or 'seperate':
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'jointly': 
+              adjusted_state_income = gross_income - 
+          elif filing_status == 'head of household': 
+              adjusted_state_income = gross_income -     
           
     if self_employment_income > 0:
           tax_statement = f"Your total amount of taxes due is ${}. This include ${federal_tax_amount} federal tax, ${self_employment_tax} in self employment, and ${state_tax_amount} {state} tax amount."
