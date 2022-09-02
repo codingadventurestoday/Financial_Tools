@@ -125,8 +125,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                     'tier 7': +(adjusted_state_income-)*.103,
                                                     'tier 8': +(adjusted_state_income-)*.113,
                                                     'tier 9': +(adjusted_state_income-)*.123}
-                                  }, 
-                     'colorado': adjusted_state_income*.0455, 
+                                  },
                      'connecticut': {'single': , {'tier 1': adjusted_state_income*.03,
                                                   'tier 2': +(adjusted_state_income-)*.05,
                                                   'tier 3': +(adjusted_state_income-)*.055,
@@ -275,9 +274,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                   'tier 3': +(adjusted_state_income-)*.045,
                                                   'tier 4': +(adjusted_state_income-)*.055,
                                                   'tier 5': +(adjusted_state_income-)*.065}
-                              }, 
-                     'illinois': sum*.0495,
-                     'indiana': sum*.0323,
+                              },
                      'iowa': {'single': , {'tier 1': adjusted_state_income*.0033,
                                            'tier 2': 5.75+(adjusted_state_income-1743)*.0067,
                                            'tier 3': 17.43+(adjusted_state_income-3486)*.0225,
@@ -328,7 +325,6 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                  'tier 2': 930+(adjusted_state_income-15000)*.0525,
                                                  'tier 3': 2505+(adjusted_state_income-60000)*.057}
                              }, 
-                     'kentucky': .05, 
                      'louisiana': {'single': , {'tier 1': adjusted_state_income*.0185,
                                                 'tier 2': 231.25+(adjusted_state_income-12500)*.0350,
                                                 'tier 3': 1543.75+(adjusted_state_income-50000)*.0425},
@@ -387,9 +383,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                    'tier 6': 8332.5+(adjusted_state_income-175000)*.0525,
                                                    'tier 7': 10947.5+(adjusted_state_income-225000)*.055,
                                                    'tier 8': 15072.5+(adjusted_state_income-300000)*.0575}
-                                      }, 
-                     'massachusetts': adjusted_state_income*.05, 
-                     'michigan': adjusted_state_income*.0425, 
+                                      },
                      'minnesota': {'single': , {'tier 1': sadjusted_state_income*.1,
                                                 'tier 2': +(adjusted_state_income-)*.12,
                                                 'tier 3': +(adjusted_state_income-)*.12,
@@ -502,8 +496,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                   'tier 2': +(adjusted_state_income-)*.12,
                                                   'tier 3': +(adjusted_state_income-)*.12,
                                                   'tier 4': +(adjusted_state_income-)*.12}
-                             }
-                     'new hampshire': adjusted_state_income*.05, 
+                             }, 
                      'new jersey': {'single': , {'tier 1': adjusted_state_income*.1,
                                                  'tier 2': +(adjusted_state_income-)*.12,
                                                  'tier 3': +(adjusted_state_income-)*.12,
@@ -583,7 +576,6 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                    'tier 7': +(adjusted_state_income-)*.12,
                                                    'tier 8': +(adjusted_state_income-)*.12}
                                      },
-                     'north carolina': adjusted_state_income*.0525,
                      'north dakota': {'single': , {'tier 1': adjusted_state_income*.1,
                                                    'tier 2': +(adjusted_state_income-)*.12,
                                                    'tier 3': +(adjusted_state_income-)*.12,
@@ -671,8 +663,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                  'tier 2': +(adjusted_state_income-)*.12,
                                                  'tier 3': +(adjusted_state_income-)*.12,
                                                  'tier 4': +(adjusted_state_income-)*.12}
-                                }, 
-                     'pennsylvania': adjusted_state_income*.0307, 
+                                },
                      'rhode island': {'single': , {'tier 1': adjusted_state_income*.1,
                                                    'tier 2': +(adjusted_state_income-)*.12,
                                                    'tier 3': +(adjusted_state_income-)*.12},
@@ -739,8 +730,7 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                    'tier 5': +(adjusted_state_income-)*.12,
                                                    'tier 6': +(adjusted_state_income-)*.12,
                                                    'tier 17': +(adjusted_state_income-)*.12}
-                                   }
-                     'utah': adjusted_state_income*.0495, 
+                                   },
                      'vermont': {'single': , {'tier 1': adjusted_state_income*.1,
                                               'tier 2': +(adjusted_state_income-)*.12,
                                               'tier 3': +(adjusted_state_income-)*.12,
@@ -797,21 +787,53 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                       'tier 5': +(adjusted_state_income-)*.12}
                                      }, 
                      'wisconsin': {'single': , {'tier 1': adjusted_state_income*.1,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12,
-                                                'tier 4': +(adjusted_state_income-)*.12},
-                                    'jointly': {'tier 1': +(adjusted_state_income-)*.12,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12,
-                                                'tier 4': +(adjusted_state_income-)*.12},
-                                   'seperate': {'tier 1': +(adjusted_state_income-)*.12,
-                                                'tier 2': +(adjusted_state_income-)*.12,
-                                                'tier 3': +(adjusted_state_income-)*.12,
-                                                'tier 4': +(adjusted_state_income-)*.12},
-                                    'head of house':{'tier 1': +(adjusted_state_income-)*.12,
-                                                     'tier 2': +(adjusted_state_income-)*.12,
-                                                     'tier 3': +(adjusted_state_income-)*.12,
-                                                     'tier 4': +(adjusted_state_income-)*.12}   }     }
+                                                'tier 2': 352+(adjusted_state_income-10000)*.12,
+                                                'tier 3': 793+(adjusted_state_income-20000)*.12,
+                                                'tier 4': 1295+(adjusted_state_income-30000)*.12,
+                                                'tier 5': 1825+(adjusted_state_income-40000)*.12,
+                                                'tier 6': 2355+(adjusted_state_income-50000)*.12,
+                                                'tier 7': 2885+(adjusted_state_income-60000)*.12,
+                                                'tier 8': 3415+(adjusted_state_income-70000)*.12,
+                                                'tier 9': 3945+(adjusted_state_income-80000)*.12,
+                                                'tier 10': 4475+(adjusted_state_income-90000)*.12,
+                                                'tier 11': 5005+(adjusted_state_income-100000)*.12,
+                                                'tier 12': +(adjusted_state_income-266930)*.12},
+                                    'jointly': {'tier 1': adjusted_state_income*.12,
+                                                'tier 2': 352+(adjusted_state_income-10000)*.12,
+                                                'tier 3': 748+(adjusted_state_income-20000)*.12,
+                                                'tier 4': 1213+(adjusted_state_income-30000)*.12,
+                                                'tier 5': 1728+(adjusted_state_income-40000)*.12,
+                                                'tier 6': 2258+(adjusted_state_income-50000)*.12,
+                                                'tier 7': 2788+(adjusted_state_income-60000)*.12,
+                                                'tier 8': 3318+(adjusted_state_income-70000)*.12,
+                                                'tier 9': 3848+(adjusted_state_income-80000)*.12,
+                                                'tier 10': 4378+(adjusted_state_income-90000)*.12,
+                                                'tier 11': 4908+(adjusted_state_income-100000)*.12,
+                                                'tier 12': +(adjusted_state_income-355910)*.12},
+                                   'seperate': {'tier 1': adjusted_state_income*.12,
+                                                'tier 2': 863+(adjusted_state_income-10000)*.12,
+                                                'tier 3': 1393+(adjusted_state_income-20000)*.12,
+                                                'tier 4': 1923+(adjusted_state_income-30000)*.12,
+                                                'tier 5': 2453+(adjusted_state_income-40000)*.12,
+                                                'tier 6': 2983+(adjusted_state_income-50000)*.12,
+                                                'tier 7': 3513+(adjusted_state_income-60000)*.12,
+                                                'tier 8': 4043+(adjusted_state_income-70000)*.12,
+                                                'tier 9': 4573+(adjusted_state_income-80000)*.12,
+                                                'tier 10': 4573+(adjusted_state_income-90000)*.12,
+                                                'tier 11': 5103+(adjusted_state_income-100000)*.12,
+                                                'tier 12': +(adjusted_state_income-177960)*.12},
+                                    'head of house':{'tier 1': adjusted_state_income*.12,
+                                                     'tier 2': 352+(adjusted_state_income-10000)*.12,
+                                                     'tier 3': 793+(adjusted_state_income-20000)*.12,
+                                                     'tier 4': 1295+(adjusted_state_income-30000)*.12,
+                                                     'tier 5': 1825+(adjusted_state_income-40000)*.12,
+                                                     'tier 6': 2355+(adjusted_state_income-50000)*.12,
+                                                     'tier 7': 2885+(adjusted_state_income-60000)*.12,
+                                                     'tier 8': 3415+(adjusted_state_income-70000)*.12,
+                                                     'tier 9': 3945+(adjusted_state_income-80000)*.12,
+                                                     'tier 10': 4475+(adjusted_state_income-90000)*.12,
+                                                     'tier 11': 5005+(adjusted_state_income-10000)*.12,
+                                                     'tier 12': +(adjusted_state_income-266930)*.12}   }     }
 
 list_of_states_with_taxes = ['alabama' , 'arizona' ,'arkansas' ,'california','colorado' , 'connecticut' ,'delaware' , 'georgia' , 'hawaii' , 'idaho' , 'illinois' ,
                   'indiana' , 'iowa' ,'kansas' , 'kentucky' ,'louisiana' , 'maine' , 'maryland', 'massachusetts' , 'michigan' ,'minnesota' , 'mississippi' ,'missouri' , 'montana' , 
@@ -1046,14 +1068,16 @@ def estimated_taxes():
           elif filing_status == 'jointly': 
               adjusted_state_income = gross_income - 
           elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income -  
+          
      elif state.lower() = 'colorado':
           if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 12550
+              state_tax_amount = adjusted_state_income* .0455
+          elif filing_status == 'jointly' or 'head of household: 
+              adjusted_state_income = gross_income - 25100
+              state_tax_amount = adjusted_state_income*.0455
+          
      elif state.lower() = 'connecticut':
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 
@@ -1089,20 +1113,23 @@ def estimated_taxes():
               adjusted_state_income = gross_income - 
           elif filing_status == 'head of household': 
               adjusted_state_income = gross_income -          
-     elif state.lower() = 'illinois':
+ 
+      elif state.lower() = 'illinois':
           if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 2325
+              state_tax_amount = adjusted_state_income* .0495
+          elif filing_status == 'jointly' or 'head of household: 
+              adjusted_state_income = gross_income - 4650
+              state_tax_amount = adjusted_state_income*.0495
+          
      elif state.lower() = 'indiana':
           if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 1000
+              state_tax_amount = adjusted_state_income* .0323
+          elif filing_status == 'jointly' or 'head of household: 
+              adjusted_state_income = gross_income - 2000
+              state_tax_amount = adjusted_state_income*.0323
+          
      elif state.lower() = 'iowa':
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 2210
@@ -1115,13 +1142,10 @@ def estimated_taxes():
               adjusted_state_income = gross_income - 25900
           elif filing_status == 'head of household': 
               adjusted_state_income = gross_income - 19400
+          
      elif state.lower() = 'kentucky':
-          if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 2690
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 2690
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income - 2690 
+          adjusted_state_income = gross_income - 2690
+          state_tax_amount = adjusted_state_income * .05
           
      elif state.lower() = 'louisiana':
           if filing_status == 'single' or 'seperate' or 'head of household':
@@ -1157,8 +1181,7 @@ def estimated_taxes():
                   elif 46000 < adjusted_state_income <= 108900: 
                       state_tax_bracket[state][filling_status]['tier 2']
                   elif adjusted_state_income >108900 : 
-                      state_tax_bracket[state][filling_status]['tier 3'] 
-          
+                      state_tax_bracket[state][filling_status]['tier 3']     
           elif filing_status == 'head of household': 
               adjusted_state_income = gross_income - 19400 
                   if adjusted_state_income <= 34500:
@@ -1207,19 +1230,16 @@ def estimated_taxes():
                   state_tax_bracket[state][filling_status]['tier 8']          
           
      elif state.lower() = 'massachuetts':
-          if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income  
+              state_tax_amount = adjusted_state_income * .05
+          
      elif state.lower() = 'michigan':               
           if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 4750
+          elif filing_status == 'jointly' or 'head of household': 
+              adjusted_state_income = gross_income - 9500
+          state_tax_amount = adjusted_state_income * .0425
+          
      elif state.lower() = 'minnesota':
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 
@@ -1282,14 +1302,15 @@ def estimated_taxes():
           elif filing_status == 'jointly': 
               adjusted_state_income = gross_income - 
           elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 
+          
      elif state.lower() = 'north carolina': 
           if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 10750
+          elif filing_status == 'jointly' or 'head of household': 
+              adjusted_state_income = gross_income - 215000
+          state_tax_amount = adjusted_state_income * .0525
+          
      elif state.lower() = 'north dakota':
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 
@@ -1317,14 +1338,11 @@ def estimated_taxes():
           elif filing_status == 'jointly': 
               adjusted_state_income = gross_income - 
           elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 
+          
      elif state.lower() = 'pennslyvania':
-          if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+          state_tax_amount = gross_income * .0307         
+          
      elif state.lower() = 'rhode island':
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 
@@ -1345,14 +1363,15 @@ def estimated_taxes():
           elif filing_status == 'jointly': 
               adjusted_state_income = gross_income - 
           elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income -   
+          
      elif state.lower() = 'utah':
           if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income - 15095
+          elif filing_status == 'jointly' or 'head of household': 
+              adjusted_state_income = gross_income - 30190
+          state_tax_amount = adjusted_state_income * .0495
+          
      elif state.lower() = 'vermont':         
           if filing_status == 'single' or 'seperate':
               adjusted_state_income = gross_income - 
@@ -1373,14 +1392,90 @@ def estimated_taxes():
           elif filing_status == 'jointly': 
               adjusted_state_income = gross_income - 
           elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -          
+              adjusted_state_income = gross_income -  
+          
      elif state.lower() = 'wisconsin':
-          if filing_status == 'single' or 'seperate':
-              adjusted_state_income = gross_income - 
+          if filing_status == 'single' or 'head of household':
+              if filing_status == 'single': 
+                  adjusted_state_income = gross_income - 11200
+              elif filing_status == 'head of househould': 
+                  adjusted_state_income = gross_income - 14470 
+              if adjusted_state_income <= 10000: 
+                  state_tax_bracket[state][filing_status]['tier 1']
+              elif 10000< adjusted_state_income <= 20000: 
+                  state_tax_bracket[state][filing_status]['tier 2']
+              elif 20000< adjusted_state_income <= 30000: 
+                  state_tax_bracket[state][filing_status]['tier 3']
+              elif 30000< adjusted_state_income <= 40000: 
+                  state_tax_bracket[state][filing_status]['tier 4']
+              elif 40000 < adjusted_state_income <= 50000: 
+                  state_tax_bracket[state][filing_status]['tier 5']
+              elif 50000 < adjusted_state_income <= 60000: 
+                  state_tax_bracket[state][filing_status]['tier 6']
+              elif 60000< adjusted_state_income <= 70000: 
+                  state_tax_bracket[state][filing_status]['tier 7']
+              elif 70000< adjusted_state_income <= 80000: 
+                  state_tax_bracket[state][filing_status]['tier 8']
+              elif 80000< adjusted_state_income <= 90000: 
+                  state_tax_bracket[state][filing_status]['tier 9']
+              elif 90000< adjusted_state_income <= 100000: 
+                  state_tax_bracket[state][filing_status]['tier 10']
+              elif 100000< adjusted_state_income <= 266930: 
+                  state_tax_bracket[state][filing_status]['tier 11']          
+              elif  adjusted_state_income > 266930: 
+                  state_tax_bracket[state][filing_status]['tier 12']
+          elif filing_status == 'seperate':
+              adjusted_state_income = gross_income - 9850
+              if adjusted_state_income <= 10000: 
+                  state_tax_bracket[state][filing_status]['tier 1']
+              elif 10000< adjusted_state_income <= 20000: 
+                  state_tax_bracket[state][filing_status]['tier 2']
+              elif 20000< adjusted_state_income <= 30000: 
+                  state_tax_bracket[state][filing_status]['tier 3']
+              elif 30000< adjusted_state_income <= 40000: 
+                  state_tax_bracket[state][filing_status]['tier 4']
+              elif 40000< adjusted_state_income <= 50000: 
+                  state_tax_bracket[state][filing_status]['tier 5']
+              elif 50000< adjusted_state_income <= 60000: 
+                  state_tax_bracket[state][filing_status]['tier 6']
+              elif 60000< adjusted_state_income <= 70000: 
+                  state_tax_bracket[state][filing_status]['tier 7']
+              elif 70000< adjusted_state_income <= 80000: 
+                  state_tax_bracket[state][filing_status]['tier 8']
+              elif 80000< adjusted_state_income <= 90000: 
+                  state_tax_bracket[state][filing_status]['tier 9']
+              elif 90000< adjusted_state_income <= 10000: 
+                  state_tax_bracket[state][filing_status]['tier 10']
+              elif 100000< adjusted_state_income <= 177960: 
+                  state_tax_bracket[state][filing_status]['tier 11']          
+              elif  adjusted_state_income > 177960: 
+                  state_tax_bracket[state][filing_status]['tier 12']
           elif filing_status == 'jointly': 
-              adjusted_state_income = gross_income - 
-          elif filing_status == 'head of household': 
-              adjusted_state_income = gross_income -     
+              adjusted_state_income = gross_income - 20730 
+              if adjusted_state_income <= 10000: 
+                  state_tax_bracket[state][filing_status]['tier 1']
+              elif 10000< adjusted_state_income <= 20000: 
+                  state_tax_bracket[state][filing_status]['tier 2']
+              elif 20000< adjusted_state_income <= 30000: 
+                  state_tax_bracket[state][filing_status]['tier 3']
+              elif 30000< adjusted_state_income <= 40000: 
+                  state_tax_bracket[state][filing_status]['tier 4']
+              elif 40000< adjusted_state_income <= 50000: 
+                  state_tax_bracket[state][filing_status]['tier 5']
+              elif 50000< adjusted_state_income <= 60000: 
+                  state_tax_bracket[state][filing_status]['tier 6']
+              elif 60000< adjusted_state_income <= 70000: 
+                  state_tax_bracket[state][filing_status]['tier 7']
+              elif 70000< adjusted_state_income <= 80000: 
+                  state_tax_bracket[state][filing_status]['tier 8']
+              elif 80000< adjusted_state_income <= 90000: 
+                  state_tax_bracket[state][filing_status]['tier 9']
+              elif 90000< adjusted_state_income <= 100000: 
+                  state_tax_bracket[state][filing_status]['tier 10']
+              elif 100000< adjusted_state_income <= 355910: 
+                  state_tax_bracket[state][filing_status]['tier 11']          
+              elif  adjusted_state_income > 355910: 
+                  state_tax_bracket[state][filing_status]['tier 12']
           
     if self_employment_income > 0:
           tax_statement = f"Your total amount of taxes due is ${}. This include ${federal_tax_amount} federal tax, ${self_employment_tax} in self employment, and ${state_tax_amount} {state} tax amount."
