@@ -786,54 +786,22 @@ state_tax_bracket = {'alabama' : {'single': , {'tier 1': adjusted_state_income*.
                                                       'tier 4': +(adjusted_state_income-)*.12,
                                                       'tier 5': +(adjusted_state_income-)*.12}
                                      }, 
-                     'wisconsin': {'single': , {'tier 1': adjusted_state_income*.1,
-                                                'tier 2': 352+(adjusted_state_income-10000)*.12,
-                                                'tier 3': 793+(adjusted_state_income-20000)*.12,
-                                                'tier 4': 1295+(adjusted_state_income-30000)*.12,
-                                                'tier 5': 1825+(adjusted_state_income-40000)*.12,
-                                                'tier 6': 2355+(adjusted_state_income-50000)*.12,
-                                                'tier 7': 2885+(adjusted_state_income-60000)*.12,
-                                                'tier 8': 3415+(adjusted_state_income-70000)*.12,
-                                                'tier 9': 3945+(adjusted_state_income-80000)*.12,
-                                                'tier 10': 4475+(adjusted_state_income-90000)*.12,
-                                                'tier 11': 5005+(adjusted_state_income-100000)*.12,
-                                                'tier 12': +(adjusted_state_income-266930)*.12},
-                                    'jointly': {'tier 1': adjusted_state_income*.12,
-                                                'tier 2': 352+(adjusted_state_income-10000)*.12,
-                                                'tier 3': 748+(adjusted_state_income-20000)*.12,
-                                                'tier 4': 1213+(adjusted_state_income-30000)*.12,
-                                                'tier 5': 1728+(adjusted_state_income-40000)*.12,
-                                                'tier 6': 2258+(adjusted_state_income-50000)*.12,
-                                                'tier 7': 2788+(adjusted_state_income-60000)*.12,
-                                                'tier 8': 3318+(adjusted_state_income-70000)*.12,
-                                                'tier 9': 3848+(adjusted_state_income-80000)*.12,
-                                                'tier 10': 4378+(adjusted_state_income-90000)*.12,
-                                                'tier 11': 4908+(adjusted_state_income-100000)*.12,
-                                                'tier 12': +(adjusted_state_income-355910)*.12},
-                                   'seperate': {'tier 1': adjusted_state_income*.12,
-                                                'tier 2': 863+(adjusted_state_income-10000)*.12,
-                                                'tier 3': 1393+(adjusted_state_income-20000)*.12,
-                                                'tier 4': 1923+(adjusted_state_income-30000)*.12,
-                                                'tier 5': 2453+(adjusted_state_income-40000)*.12,
-                                                'tier 6': 2983+(adjusted_state_income-50000)*.12,
-                                                'tier 7': 3513+(adjusted_state_income-60000)*.12,
-                                                'tier 8': 4043+(adjusted_state_income-70000)*.12,
-                                                'tier 9': 4573+(adjusted_state_income-80000)*.12,
-                                                'tier 10': 4573+(adjusted_state_income-90000)*.12,
-                                                'tier 11': 5103+(adjusted_state_income-100000)*.12,
-                                                'tier 12': +(adjusted_state_income-177960)*.12},
-                                    'head of house':{'tier 1': adjusted_state_income*.12,
-                                                     'tier 2': 352+(adjusted_state_income-10000)*.12,
-                                                     'tier 3': 793+(adjusted_state_income-20000)*.12,
-                                                     'tier 4': 1295+(adjusted_state_income-30000)*.12,
-                                                     'tier 5': 1825+(adjusted_state_income-40000)*.12,
-                                                     'tier 6': 2355+(adjusted_state_income-50000)*.12,
-                                                     'tier 7': 2885+(adjusted_state_income-60000)*.12,
-                                                     'tier 8': 3415+(adjusted_state_income-70000)*.12,
-                                                     'tier 9': 3945+(adjusted_state_income-80000)*.12,
-                                                     'tier 10': 4475+(adjusted_state_income-90000)*.12,
-                                                     'tier 11': 5005+(adjusted_state_income-10000)*.12,
-                                                     'tier 12': +(adjusted_state_income-266930)*.12}   }     }
+                     'wisconsin': {'single': , {'tier 1': adjusted_state_income*.0354,
+                                                'tier 2': 429.05+(adjusted_state_income-1210)*.0465,
+                                                'tier 3': 993.09+(adjusted_state_income-24250)*..0627,
+                                                'tier 4': 13855.13+(adjusted_state_income-266930)*.0765,
+                                    'jointly': {'tier 1': adjusted_state_income*.0354,
+                                                'tier 2': 572.06+(adjusted_state_income-16160)*.0465,
+                                                'tier 3': 1323.97+(adjusted_state_income-32330)*.0627,
+                                                'tier 4': 18473.71+(adjusted_state_income-355910)*.0765,,
+                                   'seperate': {'tier 1': adjusted_state_income*.0354,
+                                                'tier 2': 286.03+(adjusted_state_income-8080)*.0465,
+                                                'tier 3': 661.75+(adjusted_state_income-16160)*.0627,
+                                                'tier 4': 9237.15+(adjusted_state_income-177960)*.0765,
+                                    'head of house':{'tier 1': adjusted_state_income*.0354,
+                                                     'tier 2': 429.05+(adjusted_state_income-1210)*.0465,
+                                                     'tier 3': 993.09+(adjusted_state_income-24250)*.0627,
+                                                     'tier 4': 13855.13+(adjusted_state_income-266930)*.0765,}   }     }
 
 list_of_states_with_taxes = ['alabama' , 'arizona' ,'arkansas' ,'california','colorado' , 'connecticut' ,'delaware' , 'georgia' , 'hawaii' , 'idaho' , 'illinois' ,
                   'indiana' , 'iowa' ,'kansas' , 'kentucky' ,'louisiana' , 'maine' , 'maryland', 'massachusetts' , 'michigan' ,'minnesota' , 'mississippi' ,'missouri' , 'montana' , 
@@ -1400,82 +1368,36 @@ def estimated_taxes():
                   adjusted_state_income = gross_income - 11200
               elif filing_status == 'head of househould': 
                   adjusted_state_income = gross_income - 14470 
-              if adjusted_state_income <= 10000: 
+              if adjusted_state_income <= 12120: 
                   state_tax_bracket[state][filing_status]['tier 1']
-              elif 10000< adjusted_state_income <= 20000: 
+              elif 12120< adjusted_state_income <= 24250: 
                   state_tax_bracket[state][filing_status]['tier 2']
-              elif 20000< adjusted_state_income <= 30000: 
+              elif 24250< adjusted_state_income <= 266930: 
                   state_tax_bracket[state][filing_status]['tier 3']
-              elif 30000< adjusted_state_income <= 40000: 
+              elif 266930< adjusted_state_income: 
                   state_tax_bracket[state][filing_status]['tier 4']
-              elif 40000 < adjusted_state_income <= 50000: 
-                  state_tax_bracket[state][filing_status]['tier 5']
-              elif 50000 < adjusted_state_income <= 60000: 
-                  state_tax_bracket[state][filing_status]['tier 6']
-              elif 60000< adjusted_state_income <= 70000: 
-                  state_tax_bracket[state][filing_status]['tier 7']
-              elif 70000< adjusted_state_income <= 80000: 
-                  state_tax_bracket[state][filing_status]['tier 8']
-              elif 80000< adjusted_state_income <= 90000: 
-                  state_tax_bracket[state][filing_status]['tier 9']
-              elif 90000< adjusted_state_income <= 100000: 
-                  state_tax_bracket[state][filing_status]['tier 10']
-              elif 100000< adjusted_state_income <= 266930: 
-                  state_tax_bracket[state][filing_status]['tier 11']          
-              elif  adjusted_state_income > 266930: 
-                  state_tax_bracket[state][filing_status]['tier 12']
+
           elif filing_status == 'seperate':
               adjusted_state_income = gross_income - 9850
-              if adjusted_state_income <= 10000: 
+              if adjusted_state_income <= 8080: 
                   state_tax_bracket[state][filing_status]['tier 1']
-              elif 10000< adjusted_state_income <= 20000: 
+              elif 8080< adjusted_state_income <= 16160: 
                   state_tax_bracket[state][filing_status]['tier 2']
-              elif 20000< adjusted_state_income <= 30000: 
+              elif 16160< adjusted_state_income <= 177960: 
                   state_tax_bracket[state][filing_status]['tier 3']
-              elif 30000< adjusted_state_income <= 40000: 
+              elif 177960< adjusted_state_income: 
                   state_tax_bracket[state][filing_status]['tier 4']
-              elif 40000< adjusted_state_income <= 50000: 
-                  state_tax_bracket[state][filing_status]['tier 5']
-              elif 50000< adjusted_state_income <= 60000: 
-                  state_tax_bracket[state][filing_status]['tier 6']
-              elif 60000< adjusted_state_income <= 70000: 
-                  state_tax_bracket[state][filing_status]['tier 7']
-              elif 70000< adjusted_state_income <= 80000: 
-                  state_tax_bracket[state][filing_status]['tier 8']
-              elif 80000< adjusted_state_income <= 90000: 
-                  state_tax_bracket[state][filing_status]['tier 9']
-              elif 90000< adjusted_state_income <= 10000: 
-                  state_tax_bracket[state][filing_status]['tier 10']
-              elif 100000< adjusted_state_income <= 177960: 
-                  state_tax_bracket[state][filing_status]['tier 11']          
-              elif  adjusted_state_income > 177960: 
-                  state_tax_bracket[state][filing_status]['tier 12']
+
           elif filing_status == 'jointly': 
               adjusted_state_income = gross_income - 20730 
-              if adjusted_state_income <= 10000: 
+              if adjusted_state_income <= 16160: 
                   state_tax_bracket[state][filing_status]['tier 1']
-              elif 10000< adjusted_state_income <= 20000: 
+              elif 16160< adjusted_state_income <= 32330: 
                   state_tax_bracket[state][filing_status]['tier 2']
-              elif 20000< adjusted_state_income <= 30000: 
+              elif 32330< adjusted_state_income <= 355910: 
                   state_tax_bracket[state][filing_status]['tier 3']
-              elif 30000< adjusted_state_income <= 40000: 
+              elif 355910< adjusted_state_income: 
                   state_tax_bracket[state][filing_status]['tier 4']
-              elif 40000< adjusted_state_income <= 50000: 
-                  state_tax_bracket[state][filing_status]['tier 5']
-              elif 50000< adjusted_state_income <= 60000: 
-                  state_tax_bracket[state][filing_status]['tier 6']
-              elif 60000< adjusted_state_income <= 70000: 
-                  state_tax_bracket[state][filing_status]['tier 7']
-              elif 70000< adjusted_state_income <= 80000: 
-                  state_tax_bracket[state][filing_status]['tier 8']
-              elif 80000< adjusted_state_income <= 90000: 
-                  state_tax_bracket[state][filing_status]['tier 9']
-              elif 90000< adjusted_state_income <= 100000: 
-                  state_tax_bracket[state][filing_status]['tier 10']
-              elif 100000< adjusted_state_income <= 355910: 
-                  state_tax_bracket[state][filing_status]['tier 11']          
-              elif  adjusted_state_income > 355910: 
-                  state_tax_bracket[state][filing_status]['tier 12']
           
     if self_employment_income > 0:
           tax_statement = f"Your total amount of taxes due is ${}. This include ${federal_tax_amount} federal tax, ${self_employment_tax} in self employment, and ${state_tax_amount} {state} tax amount."
